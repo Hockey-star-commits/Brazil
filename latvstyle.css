@@ -1,0 +1,170 @@
+/*------------------------------------LÁTVÁNYOSSÁGOK-----------------------------------------*/
+
+
+#latvBody{
+    background-color: rgb(1, 30, 3);
+}
+
+#logo{
+    width: 60px;
+    border-radius: 10px;
+}
+
+#latvCim{
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: rgb(0, 151, 57);
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#latvCim {
+  animation: slideDown 1s ease-out forwards;
+}
+
+
+#carouselHatter {
+  position: relative; /* A videó pozicionálásához szükséges */
+  margin: 0; /* Eltávolítjuk a margót, hogy a videó kitöltse a teljes szélességet */
+  width: 100%; /* A videó szélessége teljesen kitölti a képernyőt */
+  height: 100vh; /* A videó magassága teljes képernyőnyi lesz */
+  overflow: hidden; /* A túlcsorduló tartalom elrejtése */
+}
+
+#carouselHatter video {
+  position: absolute; /* A videó háttérként való elhelyezése */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* A videó teljes képernyőt kitölti */
+  object-fit: cover; /* A videó kitölti a rendelkezésre álló teret úgy, hogy az arányok megmaradnak */
+  z-index: -1; /* A videó a háttérben marad */
+}
+
+#carousel {
+  position: relative; /* A carousel elemeinek normál pozicionálása */
+  margin: auto;
+  width: 60%; /* A carousel szélessége a képernyő közepén */
+  top: 50%; /* A carousel függőlegesen középre kerül */
+  transform: translateY(-50%); /* A carousel pontos középre helyezése függőlegesen */
+  
+}
+
+#carouselKepek {
+  border-radius: 30px;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.5);
+}
+
+.carouselSzoveg {
+  font-style: italic;
+  color: rgb(254, 221, 0);
+  background-color: rgb(0,39,118);
+}
+
+
+
+
+#erdekessegek{
+    margin: 50px;
+    font-weight: bold;
+    color: bisque;
+    text-align: center;
+}
+
+#erdekesseg1{
+    transform: rotate(20deg);
+    background-image: url(kepek/erdHatter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+
+#latvJSON {
+  color: white;
+  
+}
+
+#latvJSONleiras {
+  background-color: rgba(0, 151, 57, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1100px;
+  margin: 30px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+#latvJSONkep {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 60px;
+  }
+  
+  
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+  
+ 
+  .nav-link {
+    font-size: 18px;
+    color: #ffffff !important;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+ 
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #latvBevezeto{
+    text-align: center;
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    background-color: rgb(26, 47, 29);
+  }
+
+
+  

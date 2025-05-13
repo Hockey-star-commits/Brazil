@@ -1,0 +1,117 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(1, 30, 3);
+  margin: 0;
+  padding: 0;
+}
+#logo{
+    width: 60px;
+    border-radius: 10px;
+}
+
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 60px;
+  }
+  
+  
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+  
+ 
+  .nav-link {
+    font-size: 18px;
+    color: #ffffff !important;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+ 
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+#FootballCim{
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: rgb(0, 151, 57);
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    
+}
+
+#footballerdekessegek{
+    margin-top: 10px;
+    overflow: hidden;
+    font-style: italic;
+}
+
+#footballBevezeto{
+    text-align: center;
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    background-color: rgb(26, 47, 29);
+}
+
+h2{
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: rgb(0, 151, 57);
+    font-weight: bold;
+}
+
+#peleneymarronaldinho{
+    max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 5px 5px 40px rgba(255, 217, 24, 0.5);
+  border-radius: 8px;
+}
+
+#FootballCim {
+  opacity: 0;
+  transform: translateY(-50px); /* kezdőpozíció: fentebb van */
+  transition: all 1s ease-out;
+}
+
+#FootballCim.show {
+  opacity: 1;
+  transform: translateY(0); /* visszacsúszik az eredeti helyére */
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#FootballCim {
+  animation: slideDown 1s ease-out forwards;
+}

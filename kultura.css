@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(1, 30, 3);
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+    width: 60px;
+    border-radius: 10px;
+}
+
+
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 60px;
+  }
+  
+  
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+  
+ 
+  .nav-link {
+    font-size: 18px;
+    color: #ffffff !important;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+ 
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  @keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#kulturaCim{
+      text-align: center;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: rgb(0, 151, 57);
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    
+}
+
+#kulturaCim {
+  animation: slideDown 1s ease-out forwards;
+}
+
+
+  #kulturaBevezeto{
+    text-align: center;
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    background-color: rgb(26, 47, 29);
+  }
+
+.carnival-container {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.carnival-text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+#carnival {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 5px 5px 40px rgb(200, 231, 44 ,0.5);
+  border-radius: 8px;
+}
+
+#carnival-kep {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+#nagyonEstevan{
+         text-align: center;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: beige;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}

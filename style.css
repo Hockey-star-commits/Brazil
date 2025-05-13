@@ -1,0 +1,54 @@
+/*------------------------------------FŐOLDAL-----------------------------------------*/
+
+#fooldal{
+    background-image: url(kepek/brazil\ fooldal\ hatter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#videofejlec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+#videofejlec video {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  #fooldalText a {
+    display: inline-block;
+    background-color: #345735;
+    opacity: 0.5;
+    color: rgb(250, 250, 143);
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+  }
+  
+  #fooldalText a:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  #fooldalText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+

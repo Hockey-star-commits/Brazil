@@ -1,0 +1,169 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(1, 30, 3);
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+    width: 60px;
+    border-radius: 10px;
+}
+
+
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 60px;
+  }
+  
+  
+  .navbar-brand img {
+    height: 50px;
+    width: auto;
+  }
+  
+ 
+  .nav-link {
+    font-size: 18px;
+    color: #ffffff !important;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+ 
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+.kozepre {
+  text-align: center;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: rgb(0, 151, 57);
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.gordulo-kartyak-kontener {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* A mozgó sáv, ami duplikált elemeket tartalmaz, hogy végtelen hatás legyen */
+.gordulo-kartyak {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: vegtelen-gordules 40s linear infinite;
+}
+
+/* Végtelenített mozgás jobbról balra */
+@keyframes vegtelen-gordules {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Egyes ételkártyák stílusa */
+.kartya {
+  width: 240px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.kartya:hover {
+  transform: scale(1.05);
+}
+
+/* Kép stílusa a kártyában */
+.kartya img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Név + rövid leírás */
+.kartya .szoveg {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Recept rész kattintás után */
+#recept-megjelenito {
+  width: 90%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  display: none;
+}
+
+#recept-megjelenito img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#recept-megjelenito h2 {
+  margin-top: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#etelekBevezeto{
+  text-align: center;
+    color: beige;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    background-color: rgb(26, 47, 29);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.kozepre {
+  animation: slideDown 1s ease-out forwards;
+}
